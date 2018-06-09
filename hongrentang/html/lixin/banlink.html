@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="../../js/mui.min.js"></script>
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="stylesheet" href="../../css/swiper.min.css" />
+    <link rel="stylesheet" href="css/banlink.css">
+    <script src="../../js/jquery-2.1.1.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+        setTimeout(function(){
+            var gallery = mui('.mui-slider');
+            gallery.slider({
+                interval:1800
+            });
+        },1000);
+    </script>
+</head>
+<body>
+    <div class="mui-inner-wrap">
+        <header class="mui-bar mui-bar-nav">
+            <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-right"></a>
+            <a href="">
+                <i class="mui-icon mui-icon-search mui-pull-right"></i>
+            </a>
+            <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted scroll">
+                <div class="mui-scroll slide">
+                    <a class="mui-control-item mui-active">
+                        <i></i>
+                        <b></b>
+                        资讯
+                    </a>
+                    <a class="mui-control-item">
+                        <i></i>
+                        <b></b>
+                        学堂出品
+                    </a>
+                    <a class="mui-control-item">
+                        <i></i>
+                        <b></b>
+                        红人黄页
+                    </a>
+                    <a class="mui-control-item">
+                        <i></i>
+                        <b></b>
+                        案例分析
+                    </a>
+                    <a class="mui-control-item">
+                        <i></i>
+                        <b></b>
+                        红人直通车
+                    </a>
+                    <a class="mui-control-item">
+                        <i></i>
+                        <b></b>
+                        红人通告
+                    </a>
+                    <a class="mui-control-item">
+                        <i></i>
+                        <b></b>
+                        书籍推荐
+                    </a>
+                    <a class="mui-control-item">
+                        <i></i>
+                        <b></b>
+                        学堂成果
+                    </a>
+                    <a class="mui-control-item">
+                        <i></i>
+                        <b></b>
+                        众筹
+                    </a>
+                    <a class="mui-control-item">
+                        <i></i>
+                        <b></b>
+                        人气榜
+                    </a>
+                </div>
+            </div>
+        </header>
+        <nav class="mui-bar mui-bar-tab">
+            <a class="mui-tab-item mui-active">
+                <span class="mui-icon icon1 on"></span>
+                <span class="mui-tab-label">首页</span>
+            </a>
+            <a class="mui-tab-item">
+                <span class="mui-icon icon2"></span>
+                <span class="mui-tab-label">学堂</span>
+            </a>
+            <a class="mui-tab-item">
+                <span class="mui-icon icon3"></span>
+                <span class="mui-tab-label">注册</span>
+            </a>
+            <a class="mui-tab-item">
+                <span class="mui-icon icon4"></span>
+                <span class="mui-tab-label">问答</span>
+            </a>
+            <a class="mui-tab-item">
+                <span class="mui-icon icon5"></span>
+                <span class="mui-tab-label">我的</span>
+            </a>
+        </nav>
+        <div class="mui-content mui-scroll-wrapper clearpor">
+            <div class="mui-scroll">
+                <div id="slider" class="mui-slider" >
+                    <div class="mui-slider-group mui-slider-loop">
+                        <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                        <div class="mui-slider-item mui-slider-item-duplicate">
+                            <a href="#">
+                                <img src="../../images/banner.jpg">
+                            </a>
+                        </div>
+                        <!-- 第一张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="../../images/banner.jpg">
+                            </a>
+                        </div>
+                        <!-- 第二张 -->
+                        <div class="mui-slider-item">
+                            <a href="#">
+                                <img src="../../images/banner.jpg">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tabsnav">
+                    <div class="swiper-container swiper-container-horizontal">
+                        <div class="swiper-wrapper" >
+                            <div class="swiper-slide"><a href="#" class="on">海报1</a></div>
+                            <div class="swiper-slide swiper-slide-prev"><a href="#">海报2</a></div>
+                            <div class="swiper-slide swiper-slide-active"><a href="#">海报3</a></div>
+                            <div class="swiper-slide swiper-slide-next"><a href="#">海报4</a></div>
+                            <div class="swiper-slide"><a href="#">海报5</a></div>
+                            <div class="swiper-slide"><a href="#">海报6</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banlink">
+                    <img src="../../images/banlink.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
