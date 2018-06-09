@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/zyh/zyh2.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+</head>
+<body>
+    <div class="sharecard">
+        <div class="sharecard-imgs">
+            <div class="sharecard-imgs-box">
+                <img src="../../images/card.png" alt="">
+            </div>
+        </div>
+        <div class="sharecard-foot">
+            <div class="sharecard-note">长按上方图片保存邀请卡</div>
+            <div class="slid">
+                <div class=" swiper-container ">
+                    <div class="swiper-wrapper warp">
+                        <div class=" sl1 sll"><a href=""><i></i><img src="../../images/finecoursecon-newlist1.jpg"></a></div>
+                        <div class=" sl1"><a href=""><i></i><img src="../../images/finecoursecon-newlist2.jpg"></a></div>
+                        <div class="asd sl1 "><a href=""><i class="dui"><img src="../../images/selected.png" alt=""></i><img src="../../images/finecoursecon-newlist3.jpg"></a></div>
+                        <div class=" sl1"><i></i><img src="../../images/finecoursecon-newlist4.jpg"></div>
+                        <div class=" sl1"><i></i><img src="../../images/finecoursecon-newlist5.jpg"></div>
+                        <div class=" sl1"><i></i><img src="../../images/finecoursecon-newlist6.jpg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../../js/swiper.min.js"></script>
+<script src="../../js/jquery.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        }
+    });
+</script>
+</html>
