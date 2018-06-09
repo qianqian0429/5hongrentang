@@ -1,0 +1,95 @@
+a{
+	color:#000000;
+}
+body{
+	line-height: none;
+}
+.clearpor{
+	position: static;
+	/*height: 10000px;*/
+}
+.scroll{
+	width:81%!important;
+}
+.mui-bar .mui-segmented-control{
+	top: 4px;
+}
+.mui-bar-nav.mui-bar .mui-icon{
+	margin-right: -5px;
+}
+.mui-active{
+	border:none!important;
+	color: #333333;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	color: #333;
+	border-bottom: 2px solid #ff165b;
+}
+.slide a{
+	display: block;
+    width: auto;
+    height: 42px;
+    line-height: 42px;
+    position: relative;
+    padding: 0 11px 0 10px;
+    font-size: 14px;
+    color: #333;
+}
+.slide a i{
+	display: block;
+    width: 1px;
+    height: 10px;
+    font-size: 0;
+    line-height: 0;
+    background: #ddd;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -5px;
+}
+.slide a b{
+	display: none;
+    width: auto;
+    height: 2px;
+    background: #ff165b;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    left: 10px;
+    right: 11px;
+    bottom: 6px;
+}
+.mui-segmented-control.mui-scroll-wrapper .mui-control-item {
+	padding: 0 9px;
+}
+.mui-bar-tab .mui-tab-item .mui-icon{
+	width: 20px;
+	height: 20px;
+	background:url(../images/footer.png) no-repeat;
+	-webkit-background-size: 100px 40px;
+	background-size: 100px 40px;
+}
+.mui-bar-tab .mui-tab-item .icon1{
+	background-position: 0 0;
+}
+.mui-bar-tab .mui-tab-item .on{
+	background-position: 0 -20px;
+}
+.mui-bar-tab .mui-tab-item .icon2{
+	background-position: -20px 0;
+}
+.mui-bar-tab .mui-tab-item .icon3{
+	background-position: -40px 0;
+}
+.mui-bar-tab .mui-tab-item .icon4{
+	background-position: -60px 0;
+}
+.mui-bar-tab .mui-tab-item .icon5{
+	background-position: -80px 0;
+}
+.mui-bar-tab .mui-tab-item.mui-active{
+	color: #ff0757;
+}
+.mui-bar{
+	position: fixed;
+}
