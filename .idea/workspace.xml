@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3d871600-5622-42b3-a170-b8a7948a2b95" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="5hongrentang.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -198,7 +197,7 @@
       <updated>1528371987207</updated>
       <workItem from="1528371988466" duration="864000" />
       <workItem from="1528527268483" duration="1640000" />
-      <workItem from="1528809605229" duration="1411000" />
+      <workItem from="1528809605229" duration="1483000" />
     </task>
     <task id="LOCAL-00001" summary="整理主分支">
       <created>1528810387503</created>
@@ -221,11 +220,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528811093041</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="整理主分支">
+      <created>1528811173013</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1528811173013</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3915000" />
+    <option name="totallyTimeSpent" value="3987000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -303,6 +309,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-220">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
