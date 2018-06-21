@@ -1,0 +1,245 @@
+.img{
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+.img img{
+	width: 100%;
+	height: auto;
+}
+/*menu开始*/
+.nick{
+	background: url(../images/borgrayb.png) repeat-x bottom;
+	background-color: #fff;
+	-webkit-background-size: 1px 1px;
+	background-size: 1px 1px;
+	position: relative;
+	z-index: 5;
+	padding: 0 68px 0 96px;
+	margin-top: -4px;
+}
+.nick .tou{
+	width: 66px;
+	height: 66px;
+	background-color: #fff;
+	position: absolute;
+	top: -10px;
+	left: 15px;
+	border-radius: 50%;
+	padding: 2px;
+}
+.nick .tou img{
+	width: 66px;
+	height: 66px;
+	border-radius: 50%;
+}
+.nick .center{
+	width: auto;
+	height: 68px;
+	padding-right: 10px;
+}
+.nick .center .top{
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	padding-top: 8px;
+}
+.nick .center .top .name{
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #333;
+	float: left;
+	padding-right: 20px;
+}
+.nick .center .top .name span{
+	background: url(../images/vip-blue.png) no-repeat right center;
+	-webkit-background-size: 14px 14px;
+	background-size: 14px 14px;
+	padding-right: 20px;
+}
+.nick .center .top .fen{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #999;
+}
+.nick .center .bot{
+	font-size: 10px;
+	color: #999;
+}
+.nick .right{
+	height: 40px;
+	width: 68px;
+	position: absolute;
+	right: 0;
+	top: 14px;
+	background: url(../images/borgrayl.png) repeat-y left;
+	-webkit-background-size: 1px 1px;
+	background-size: 1px 1px;
+}
+.nick .right a{
+	display: block;
+	height: 40px;
+}
+.nick .right a span{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+.nick .right a .tu{
+	width: 24px;
+	height: 24px;
+	margin: 0 auto;
+	text-align: center;
+}
+.nick .right span.tu img{
+	width: 24px;
+	height: 24px;
+}
+.nick .right span.test{
+	display: block;
+	width: auto;
+	font-size:10px;
+	color: #999;
+	padding-top: 5px;
+	text-align: center;
+}
+/*menu结束*/
+.bott{
+	height: 44px;
+	background-color: #fff;
+	padding: 9px 0;
+	overflow: hidden;
+}
+.bott ul li{
+	width: 50%;
+	height: 26px;
+	float: left;
+	background: url(../images/borgrayr.png) repeat-y right;
+	-webkit-background-size: 1px 1px;
+	background-size: 1px 1px;
+	padding: 0 35px;
+}
+.bott ul li:last-child{
+	background: none;
+}
+.bott ul li a{
+	display: block;
+	height: 26px;
+	text-align: center;
+	line-height: 26px;
+	font-size: 12px;
+	border-radius: 15px;
+	color: #fff;
+	background:linear-gradient(to right,#f58762,#fb5b5b,#ff5391);
+}
+.bott ul li a span{
+	height: 24px;
+	border-radius: 15px;
+	text-align: center;
+	background-color: #fff;
+	padding:5px 33px;
+}
+.bott ul li a span i{
+	display: inline-block;
+	height: 24px;
+	line-height: 24px;
+	color: #F54744;
+	background: url(../images/icon-add.png) no-repeat left center;
+	-webkit-background-size: 10px 10px;
+	background-size: 10px 10px;
+	padding-left: 16px;
+	font-style: normal;
+}
+
+
+/*内容开始*/
+.tabContent{
+	/*background-color: #fff;*/
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+.tabContent .tabTitle{
+	height: 40px;
+	
+	background: url(../images/borgrayb.png) repeat-x bottom #fff;
+	-webkit-background-size: 1px 1px;
+	background-size: 1px 1px;
+}
+.tabContent .tabTitle ul li{
+	float: left;
+	line-height: 40px;
+	width: 33.33%;
+	text-align: center;
+}
+.tabContent .tabTitle ul li a{
+	display: block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #666;
+}
+.tabContent .tabTitle ul li a.cur{
+	background-color: #eee;
+	color: #333;
+}
+.tabContent .tabContainer{
+	overflow: hidden;
+}
+.tabContent .tabContainer ul li{
+	margin-bottom: 5px;
+}
+.tabContent .tabContainer ul li .list a{
+	display: block;
+	background-color: #fff;
+	position: relative;
+	padding: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.tabContent .tabContainer ul li .list a .text{
+	min-height: 80px;
+	width: 210px;
+}
+.tabContent .tabContainer ul li .list a .text h4{
+	font-size: 14px;
+	color: #333;
+}
+.tabContent .tabContainer ul li .list a .text p{
+	font-size: 12px;
+	color: #999;
+	padding-top: 5px;
+	line-height: 1.5em;
+}
+.tabContent .tabContainer ul li .list a .text .bottom span{
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	font-size: 10px;
+	color: #999;
+	padding-left: 15px;
+	position: relative;
+}
+.tabContent .tabContainer ul li .list a .text .bottom span i{
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -6px;
+	background: url(../images/inopera.png) no-repeat 0 0;
+	-webkit-background-size: 48px 24px;
+	background-size: 48px 24px;
+}
+.tabContent .tabContainer ul li .list a .img{
+	width: 110px;
+	height: 80px;
+}
+.tabContent .tabContainer ul li .list a .img img{
+	width: 110px;
+	height: 80px;
+}
