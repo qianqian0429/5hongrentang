@@ -1,0 +1,130 @@
+.news{
+    width: auto;
+    height: auto;
+}
+.news li{
+    width: auto;
+    height: auto;
+    padding-bottom: 5px;
+}
+.news li .he{
+    width: auto;
+    height: auto;
+}
+.news li .he a{
+    display: block;
+    width: auto;
+    height: auto;
+    background: #fff;
+    position: relative;
+    padding: 15px;
+}
+.news li .he a .wen{
+    width: auto;
+    height: auto;
+    min-height: 80px;
+    padding-right: 120px;
+}
+.news li .he a .wen .wend{
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    color: #333;
+}
+.news li .he a .wen .wenx{
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    color: #999;
+    line-height: 1.6em;
+    padding-top: 5px;
+}
+.news li .he a .wen .kan{
+    width: auto;
+    height: auto;
+    font-size: 0;
+}
+.news li .he a .wen .kan span{
+    display: inline-block;
+    width: auto;
+    height: 20px;
+    line-height: 20px;
+    font-size: 10px;
+    color: #999;
+    padding-left: 15px;
+    position: relative;
+}
+.news li .he a .wen .kan span i{
+    display: block;
+    width: 12px;
+    height: 12px;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    background: url(../images/inopera.png) no-repeat 0px 0px;
+    background-size: 48px 24px;
+}
+.news li .he a .tu{
+    width: 110px;
+    height: 80px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 0;
+}
+.news li .he a .tu img{
+    width: 110px;
+    height: 80px;
+}
+.news li .Bigimg{
+    width: auto;
+    height: auto;
+}
+.news li .Bigimg a{
+    display: block;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+.news li .Bigimg a .weni{
+    width: 100%;
+    height: 60px;
+    font-size: 14px;
+    color: #fff;
+    padding: 30px 15px 0 15px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+}
+.news li .Bigimg a .img{
+    width: auto;
+    height: auto;
+    font-size: 0;
+}
+.news li .Bigimg a .img img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

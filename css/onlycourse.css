@@ -1,0 +1,147 @@
+.onlycourse{
+    width: auto;
+    height: auto;
+}
+.onlycourse li{
+    width: auto;
+    height: auto;
+    padding-bottom: 10px;
+}
+.onlycourse li .oche{
+    width: auto;
+    height: auto;
+    background: #fff;
+}
+.onlycourse li .oche .wen{
+    width: auto;
+    height: auto;
+    font-size: 0;
+    padding: 10px 0;
+}
+.onlycourse li .oche .wen a{
+    display: inline-block;
+    width: auto;
+    height: 14px;
+    line-height: 14px;
+    border-left: 2px solid #f54744;
+    padding-left: 13px;
+    font-size: 14px;
+    color: #333;
+}
+.onlycourse li .oche .wen a span{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background: url(../images/inmore.png) no-repeat right center;
+    padding-right: 20px;
+    background-size: 5px 10px;
+}
+.onlycourse li .oche .wenxia{
+    width: auto;
+    height: auto;
+    padding: 0 15px 15px 15px;
+    position: relative;
+}
+.onlycourse li .oche .wenxia .tu{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 15px;
+    top: 0;
+}
+.onlycourse li .oche .wenxia .tu img{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+}
+.onlycourse li .oche .wenxia .tuyou{
+    width: auto;
+    height: auto;
+    min-height: 120px;
+    margin-left: 135px;
+    position: relative;
+    padding-bottom: 36px;
+}
+.onlycourse li .oche .wenxia .tuyou .xwen{
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    color: #333;
+}
+.onlycourse li .oche .wenxia .tuyou .gxwen{
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    color: #999;
+    padding-top: 8px;
+}
+.onlycourse li .oche .wenxia .tuyou .gxwen1{
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    color: #666;
+    padding-top: 8px;
+}
+.onlycourse li .oche .wenxia .tuyou .annui{
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+}
+.onlycourse li .oche .wenxia .tuyou .annui a{
+    display: block;
+    width: auto;
+    height: auto;
+    height: 22px;
+    border: 1px solid #f54744;
+    border-radius: 15px;
+    box-shadow: inset 1px 1px 2px rgba(245,71,68,0.2);
+    font-size: 10px;
+    color: #f54744;
+    line-height: 20px;
+    padding-left: 10px;
+}
+.onlycourse li .oche .wenxia .tuyou .annui a.on{
+    padding-right: 10px;
+    background: #ccc;
+    border-color: #ccc;
+    color: #fff;
+    box-shadow: 0 0 0;
+}
+.onlycourse li .oche .wenxia .tuyou .annui span{
+    display: block;
+    width: auto;
+    height: 20px;
+    float: right;
+    background: #f54744;
+    padding: 0 10px;
+    border-radius: 15px;
+    margin-left: 5px;
+    color: #fff;
+}
+.onlycourse li .oche .wenxia .gengwu{
+    width: auto;
+    height: auto;
+    line-height: 22px;
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    font-size: 12px;
+    color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
