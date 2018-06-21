@@ -1,0 +1,44 @@
+.tabsnav{
+    width: auto;
+    height: 40px;
+    background:url(../../../images/borgrayb.png)repeat-x bottom #fff;
+    background-size: 1px 1px;
+}
+.swiper-container {
+    margin: 0 auto;
+    position: relative;
+
+    z-index: 1;
+}
+.tabsnav .swiper-slide {
+    width: 25%;
+    height: 40px;
+    float: left;
+}
+.tabsnav .swiper-slide a {
+    display: block;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+}
+.tabsnav .swiper-slide a.on {
+    background: #eeeeee;
+    color: #333;
+}
+.banlink{
+    width: auto;
+    height: auto;
+}
+.banlink img{
+    width: 100%;
+}
+img{
+    border: 0;
+    vertical-align: middle;
+    font-size: 0;
+    line-height: 0;
+    max-width: 100%;
+}
