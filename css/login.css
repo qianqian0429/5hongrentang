@@ -1,0 +1,118 @@
+body{
+    background-color: white;
+}
+.login{
+    width: auto;
+    height: auto;
+}
+.login .wen{
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    padding: 15px 0;
+    background: url(../images/borgrayb.png) repeat-x bottom #fff;
+    background-size: 1px 1px;
+}
+.login .login-biao{
+    width: auto;
+    height: auto;
+    padding: 13px 60px;
+}
+.login .login-biao li{
+    width: auto;
+    height: auto;
+    padding: 3px 0;
+}
+.login .login-biao li .xiaowen{
+    width: auto;
+    height: auto;
+    font-size: 13px;
+    color: #666666;
+}
+.login .login-biao li .inpbox{
+    width: auto;
+    height: auto;
+    margin-top: 5px;
+    font-size: 0;
+    position: relative;
+}
+.login .login-biao li .inpbox .inp{
+    display: block;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 6px 10px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333;
+    background: #fff;
+}
+.login .login-biao li .btnbox input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 15px;
+    color: #fff;
+    background: linear-gradient(to right, #f58762 , #fb5b5b 70%, #ff5391);
+    box-shadow: 0px 2px 2px rgba(255,150,149,0.5);
+}
+.loginlist{
+    width: auto;
+    height: auto;
+}
+.loginlist .loginlistbox{
+    width: auto;
+    height: 44px;
+    background: url(../images/borgrayb.png) repeat-x bottom;
+    background-size: 1px 1px;
+}
+.loginlist .loginlistbox .mui-bar{
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.loginlist .loginlistbox .mui-segmented-control.mui-segmented-control-inverted {
+    width:inherit;
+}
+.loginlist .loginlistbox .mui-segmented-control.mui-scroll-wrapper .mui-control-item b {
+    bottom: -1px;
+    width: 59px;
+    left: 0;
+    right: 0;
+}
+.loginlist .loginlistbox .mui-segmented-control.mui-scroll-wrapper .mui-control-item {
+    width: 59px;
+    padding:0;
+}
+.loginlist .loginlistbox .mui-bar .mui-segmented-control {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
