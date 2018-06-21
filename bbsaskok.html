@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/banlink.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+        setTimeout(function(){
+            var gallery = mui('.mui-slider');
+            gallery.slider({
+                interval:1800
+            });
+        },1000);
+    </script>
+    <style>
+        .mui-slider-indicator.mui-segmented-control {
+            position: relative;
+            bottom: auto;
+            left: -20px;
+        }
+        .mui-bar-tab .mui-tab-item.mui-active {
+            color: #ff0757;
+        }
+
+        .wrapper{
+            width: auto;
+            height: auto;
+            padding:44px 0 50px 0;
+        }
+        .bbscon-intro {
+            width: auto;
+            height: auto;
+            background: #fff;
+        }
+        .bbscon-intro .user .portrait {
+            width: 46px;
+            height: 46px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+        .bbscon-intro .user {
+            width: auto;
+            height: auto;
+            padding: 15px;
+            position: relative;
+        }
+        .bbscon-intro .user .portrait a {
+            display: block;
+            width: 46px;
+            height: 46px;
+            position: relative;
+        }
+        .bbscon-intro .user .portrait a span {
+            display: block;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-image: url(images/vipwhite.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 10px 10px;
+            background-color: #ff3333;
+        }
+        .bbscon-intro .user .portrait a img {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+        }
+        .bbscon-intro .user .con {
+            width: auto;
+            height: 46px;
+            padding: 0 120px 0 56px;
+        }
+        .bbscon-intro .user .con .name {
+            width: auto;
+            height: 30px;
+            line-height: 30px;
+            font-size: 16px;
+            color: #333;
+        }
+        .bbscon-intro .user .con .txt {
+            width: auto;
+            height: auto;
+            line-height: 12px;
+            font-size: 12px;
+            color: #999;
+        }
+        .bbscon-intro .user .note {
+            width: auto;
+            height: auto;
+            line-height: 12px;
+            font-size: 12px;
+            color: #666;
+            position: absolute;
+            right: 15px;
+            top: 45px;
+        }
+        .bbscon-intro .mation {
+            width: auto;
+            height: auto;
+            padding: 0 15px 15px 15px;
+            font-size: 13px;
+            color: #999;
+            line-height: 1.6em;
+        }
+        .bbsask {
+            width: auto;
+            height: auto;
+            background: #fff;
+            margin-top: 10px;
+            padding: 15px;
+        }
+        .bbsask-intro {
+            width: auto;
+            height: auto;
+            background: url(images/borgrayb.png) repeat-x bottom;
+            background-size: 1px 1px;
+            padding-bottom: 15px;
+        }
+        .bbsask-intro .head {
+            width: auto;
+            height: 36px;
+            position: relative;
+        }
+        .bbsask-intro .head .user {
+            width: auto;
+            height: 36px;
+            position: relative;
+            padding-left: 46px;
+        }
+        .bbsask-intro .head .user .portrait {
+            width: 36px;
+            height: 36px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .bbsask-intro .head .user .portrait a {
+            display: block;
+            width: 36px;
+            height: 36px;
+        }
+        .bbsask-intro .head .user .portrait a img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+        }
+        .bbsask-intro .head .user .name {
+            width: auto;
+            height: 36px;
+            line-height: 36px;
+            font-size: 14px;
+            color: #333;
+        }
+        .bbsask-intro .head .price {
+            width: auto;
+            height: 36px;
+            line-height: 36px;
+            font-size: 14px;
+            color: #999;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .bbsask-intro .text {
+            width: auto;
+            height: auto;
+            padding-top: 10px;
+            font-size: 12px;
+            color: #999999;
+        }
+        .bbsask-intro .note {
+            width: auto;
+            height: auto;
+            padding-top: 5px;
+            font-size: 12px;
+            color: #db7679;
+        }
+        .bbsask-state {
+            width: auto;
+            height: auto;
+            padding: 25px 0;
+        }
+        .bbsask-state .icon {
+            width: 50px;
+            height: 50px;
+            font-size: 0;
+            margin: 0 auto;
+        }
+        .bbsask-state .text {
+            width: auto;
+            height: auto;
+            text-align: center;
+            padding-top: 10px;
+            font-size: 12px;
+            color: #fa655b;
+            font-weight: bold;
+        }
+        .bbsask-state .back {
+            width: auto;
+            height: auto;
+            font-size: 0;
+            padding-top: 20px;
+        }
+        .bbsask-state .back a {
+            display: block;
+            width: 150px;
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            border: 0px;
+            font-size: 14px;
+            color: #fff;
+            margin: 0 auto;
+            border-radius: 5px;
+            background: -webkit-linear-gradient(left, #f58762 , #fb5b5b 70%, #ff5391);
+            background: -o-linear-gradient(right, #f58762 , #fb5b5b 70%, #ff5391);
+            background: -moz-linear-gradient(right, #f58762 , #fb5b5b 70%, #ff5391);
+            background: linear-gradient(to right, #f58762 , #fb5b5b 70%, #ff5391);
+            box-shadow: 0px 2px 2px rgba(255,150,149,0.5);
+        }
+    </style>
+</head>
+<body>
+<div class="mui-inner-wrap">
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-right"></a>
+        <a href="">
+            <i class="mui-icon mui-icon-search mui-pull-right"></i>
+        </a>
+        <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted scroll">
+            <div class="mui-scroll slide">
+                <a class="mui-control-item mui-active">
+                    <i></i>
+                    <b></b>
+                    学堂教员
+                </a>
+                <a class="mui-control-item">
+                    <i></i>
+                    <b></b>
+                    网络红人
+                </a>
+                <a class="mui-control-item">
+                    <i></i>
+                    <b></b>
+                    网络商业
+                </a>
+                <a class="mui-control-item">
+                    <i></i>
+                    <b></b>
+                    时尚造型
+                </a>
+                <a class="mui-control-item">
+                    <i></i>
+                    <b></b>
+                    官方提问
+                </a>
+
+
+            </div>
+        </div>
+    </header>
+    <nav class="mui-bar mui-bar-tab">
+        <a class="mui-tab-item ">
+            <span class="mui-icon icon1 "></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item">
+            <span class="mui-icon icon2"></span>
+            <span class="mui-tab-label">学堂</span>
+        </a>
+        <a class="mui-tab-item">
+            <span class="mui-icon icon3"></span>
+            <span class="mui-tab-label">注册</span>
+        </a>
+        <a class="mui-tab-item mui-active">
+            <span class="mui-icon icon4 on"></span>
+            <span class="mui-tab-label">问答</span>
+        </a>
+        <a class="mui-tab-item">
+            <span class="mui-icon icon5"></span>
+            <span class="mui-tab-label">我的</span>
+        </a>
+    </nav>
+    <div class="mui-content mui-scroll-wrapper clearpor">
+        <div class="mui-scroll">
+            <div id="slider" class="mui-slider" >
+                <div class="mui-slider-group mui-slider-loop">
+                    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <a href="#">
+                            <img src="images/banner.jpg">
+                        </a>
+                    </div>
+                    <!-- 第一张 -->
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="images/banner.jpg">
+                        </a>
+                    </div>
+                    <!-- 第二张 -->
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="images/banner.jpg">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="bbscon-intro">
+                <div class="user">
+                    <div class="portrait"><a href=""><span></span><img src="images/bbslist-portrait1.jpg"></a></div>
+                    <div class="con">
+                        <div class="name"><a href="">陈茂源</a></div>
+                        <div class="txt">红人学堂认证教员</div>
+                    </div>
+                    <div class="note">已回答20个问题</div>
+                </div>
+                <div class="mation">基本介绍：剑风倚荡激千尺,白云日上影中仙。便是这，白衣段云！便是这，白衣段云！“草民段云，不日定去府上做客</div>
+            </div>
+            <div class="bbsask">
+                <div class="bbsask-intro">
+                    <div class="head">
+                        <div class="user">
+                            <div class="portrait"><a href=""><img src="images/bbslist-portrait2.jpg"></a></div>
+                            <div class="name">陈茂源的回答</div>
+                            <div class="price">39元</div>
+                        </div>
+                    </div>
+                    <div class="text">Google play审核能过不?</div>
+                    <div class="note">超过72小时未被回答，费用会自动退回</div>
+                </div>
+                <div class="bbsask-state">
+                    <div class="icon"><img src="images/noteok.png"></div>
+                    <div class="text">支付成功</div>
+                    <div class="back"><a href="">返回</a></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="wrapper">
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+.mui-bar-tab .mui-tab-item.mui-active {
+    color: #ff0757;
+}
+.mui-scroll {
+    position: absolute;
+    z-index: 1;
+    left:-30px;
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.wrapper{
+    width: auto;
+    height: auto;
+    padding:44px 0 50px 0;
+}
+.bbscon-intro {
+    width: auto;
+    height: auto;
+    background: #fff;
+}
+.bbscon-intro .user {
+    width: auto;
+    height: auto;
+    padding: 15px;
+    position: relative;
+}
+.bbscon-intro .user {
+    width: auto;
+    height: auto;
+    padding: 15px;
+    position: relative;
+}
+.bbscon-intro .user .portrait a {
+    display: block;
+    width: 46px;
+    height: 46px;
+    position: relative;
+}
+.bbscon-intro .user .portrait a span {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url(../../../images/vipwhite.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px 10px;
+    background-color: #ff3333;
+}
+.bbscon-intro .user .portrait a img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}

@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <style>
+        body{
+            background-color: white;
+        }
+        .header{
+            height: 45px;
+            font-size: 0;
+            background: url(images/borgrayb.png) repeat-x bottom;
+            background-size: 1px 1px;
+        }
+        .top{
+            max-width: 750px;
+            width: 100%;
+            line-height: 44px;
+            position:fixed;
+            top:0;
+            left:0;
+            right:0;
+            background:#fff;
+            z-index: 999;
+            overflow:hidden;
+            margin:0 auto;
+        }
+        .top-left{
+            float:left;
+            height: 44px;
+            overflow-x: auto;
+        }
+        .top-left .swiper-slide{
+            width:auto !important;
+            float:left;
+
+        }
+        .top-left .swiper-slide a{
+            position:relative;
+            text-decoration: none;
+            color:#333;
+            font-size: 14px;
+            display: block;
+            padding:0 28px;
+        }
+        .top-left .swiper-slide a i{
+            display: block;
+            width: 1px;
+            height: 10px;
+            background: #ddd;
+            position:absolute;
+            right:0;
+            top:50%;
+            margin-top: -5px;
+
+        }
+        .top-right{
+            width: 11%;
+            float: right;
+            overflow: hidden;
+        }
+        .top-right a{
+            display: flex ;
+            justify-content: space-around;
+            padding: 14px 0 0 0;
+
+        }
+        .top-right img{
+            display: block;
+            height: 16px;
+
+        }
+        .swiper-wrapper li i.hongxian{
+            width: 44px;
+            height: 2px;
+            background: #ff165b;
+            position: absolute;
+            left: 22px;
+            top: 40px;
+        }
+        .supyears{
+            height: 44px;
+            background: url(images/borgrayb.png) #ffffff;
+            background-position: left bottom;
+            background-repeat: repeat-x;
+            background-size: 1px 1px;
+            position: relative;
+        }
+        .supyears .prev{
+            display: block;
+            width: 44px;
+            height: 44px;
+            padding: 17px 0;
+            position: absolute;
+            top: 0;
+        }
+        .supyears .prev span{
+            display: block;
+            width: 26px;
+            height: 10px;
+            background-image: url(images/supyears-btns.png);
+            background-repeat: no-repeat;
+            background-size: 26px 20px;
+            margin: 0 auto;
+        }
+        .supyears .note{
+            width: auto;
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            font-size: 15px;
+            color: #333333;
+            padding: 0 44px;
+        }
+        .supyears .next{
+            display: block;
+            width: 44px;
+            height: 44px;
+            padding: 17px 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .supyears .next span{
+            display: block;
+            width: 26px;
+            height: 10px;
+            background-image: url(images/supyears-btns.png);
+            background-repeat: no-repeat;
+            background-size: 26px 20px;
+            margin: 0 auto;
+            background-position: left bottom;
+        }
+        .suplist{
+            background: #fff;
+        }
+        .suplist .item{
+            background-image: url(images/borgrayb.png);
+            background-repeat: repeat-x;
+            background-position: left bottom;
+            background-size: 1px 1px;
+            background-color: #fff;
+        }
+        ul{
+            list-style: none;
+        }
+        .suplist .item .head{
+            height: 60px;
+            position: relative;
+        }
+        .suplist .item .head .suer{
+            height: 60px;
+            margin-left: 15px;
+            margin-right: 120px;
+            position: relative;
+            overflow: hidden;
+            padding-left: 55px;
+        }
+        .suplist .item .head .suer div:nth-child(1){
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 0px;
+            top: 50%;
+            margin-top: -20px;
+            font-size: 0;
+        }
+        .suplist .item .head .suer div:nth-child(1) span{
+            display: block;
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .suplist .item .head .suer div:nth-child(1) span img{
+            width: 14px;
+            height: 14px;
+        }
+        .suplist .item .head .suer div:nth-child(1) .te{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .suplist .item .head .suer .name{
+            height: 60px;
+            float: left;
+            font-size: 15px;
+            color: #333333;
+            line-height: 60px;
+        }
+        .suplist .item .head .suer .note{
+            height: 60px;
+            float: left;
+            font-size: 13px;
+            color: #999999;
+            line-height: 60px;
+            padding-left: 15px;
+        }
+        .suplist .item .head .other{
+            width: auto;
+            height: 60px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .suplist .item .head .other .start{
+            width: 30px;
+            height: 60px;
+            float: left;
+        }
+        .suplist .item .head .other .start span{
+            display: block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-top: 22px;
+            background: #ff3333;
+            box-shadow: 0px 0px 3px rgba(255,51,51,0.5);
+        }
+        .suplist .item .head .other .btn{
+            width: 46px;
+            height: 44px;
+            float: left;
+            margin-top: 19px;
+        }
+        .suplist .item .head .other .btn a{
+            display: block;
+            width: auto;
+            height: 22px;
+            line-height: 20px;
+            border: 1px solid #ddd;
+            background: #fff;
+            font-size: 13px;
+            color: #999999;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            text-align: center;
+        }
+        .suplist .item .head .other .arr{
+            width: 42px;
+            height: 60px;
+            float: left;
+        }
+        .suplist .item .head .other .arr a{
+            display: block;
+            width: auto;
+            height: 60px;
+            background: url(images/suparr.png) no-repeat center;
+            background-size: 12px 7px;
+        }
+        .suplist .item .list{
+            overflow: hidden;
+            display: block;
+            padding: 5px 10px;
+        }
+        .suplist .item .list ul li{
+            width: 9%;
+            height: auto;
+            float: left;
+            padding: 5px 0;
+        }
+        .suplist .item .list ul li span{
+            display: block;
+            width: 16px;
+            height: 16px;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 16px;
+            font-size: 9px;
+            color: #fff;
+            background: #aaaaaa;
+            margin: 0 auto;
+        }
+        .suplist .item .list ul li span.on{
+            background: #00b763;
+        }
+        .suppages{
+            text-align: center;
+            font-size: 0;
+            padding: 10px 0;
+            background: url(images/borgrayb.png) repeat-x bottom #fff;
+            background-size: 1px 1px;
+        }
+        .suppages .prev{
+            display: inline-block;
+            width: auto;
+            height: 28px;
+            line-height: 26px;
+            border: 1px solid #eee;
+            border-radius: 15px;
+            background: #fff;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+            font-size: 14px;
+            color: #333;
+            padding: 0 10px;
+        }
+        .suppages .num{
+            display: inline-block;
+            width: auto;
+            height: 28px;
+            line-height: 26px;
+            border: 1px solid #fff;
+            font-size: 14px;
+            color: #333;
+            padding: 0 20px;
+        }
+
+        .suppages .next{
+            display: inline-block;
+            width: auto;
+            height: 28px;
+            line-height: 26px;
+            border: 1px solid #eee;
+            border-radius: 15px;
+            background: #fff;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+            font-size: 14px;
+            color: #333;
+            padding: 0 10px;
+        }
+        .suppages .inp{
+            display: inline-block;
+            width: 44px;
+            height: 28px;
+            line-height: 26px;
+            border: 1px solid #eee;
+            border-radius: 15px;
+            background: #fff;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+            font-size: 14px;
+            color: #333;
+            text-align: center;
+            margin-left: 20px;
+        }
+        .suppages .btn{
+            display: inline-block;
+            width: auto;
+            height: 28px;
+            line-height: 26px;
+            border: 1px solid #fff;
+            font-size: 14px;
+            color: #146ed3;
+            margin-left: 10px;
+        }
+        .supfoot{
+            padding: 10px 0;
+        }
+        .supfoot ul li{
+            padding: 10px 0;
+            text-align: center;
+        }
+        .supfoot ul li a, .supfoot ul li span{
+            display: inline-block;
+            width: auto;
+            height: 38px;
+            line-height: 36px;
+            text-align: center;
+            font-size: 15px;
+            border: 1px solid #ff3333;
+            border-radius: 20px;
+            box-shadow: 0px 0px 5px rgba(255,255,51,0.2);
+        }
+        .supfoot ul li a{
+            color: #ff3333;
+            background: #ffffff;
+            padding: 0 20px;
+        }
+        .supfoot ul li span{
+            color: #ffffff;
+            background: #ff3333;
+            padding: 0 55px;
+        }
+       .item .head .other .start span.ru {
+            background: #00d272;
+            box-shadow: 0px 0px 3px rgba(0,210,114,0.5);
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="top">
+        <div class="top-left">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper">
+
+                    <li class="swiper-slide"><a href="#">一组<i></i><i class="hongxian"></i></a></li>
+                    <li class="swiper-slide"><a href="#">二组<i></i></a></li>
+                    <li class="swiper-slide"><a href="#">三组<i></i></a></li>
+                    <li class="swiper-slide"><a href="#">四组<i></i></a></li>
+                    <li class="swiper-slide"><a href="#">五组<i></i></a></li>
+                    <li class="swiper-slide"><a href="#">六组<i></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="supyears">
+    <a href="#" class="prev">
+        <span></span>
+    </a>
+    <div class="note">2017 年 12月</div>
+    <a href="#" class="next">
+        <span></span>
+    </a>
+</div>
+<div class="suplist">
+    <div class="item">
+        <div class="head">
+            <div class="suer">
+                <div>
+                    <span>
+                        <img src="images/suplevel8.png" alt="">
+                    </span>
+                    <img class="te" src="images/bbslist-portrait1.jpg" alt="">
+                </div>
+                <div class="name">小明</div>
+                <div class="note">未完成2日</div>
+            </div>
+            <div class="other">
+                <div class="start">
+                    <span></span>
+                </div>
+                <div class="btn">
+                    <a href="javascript:void(0)">取消</a>
+                </div>
+                <div class="arr">
+                    <a href="javascript:void(0)"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="item">
+        <div class="head">
+            <div class="suer">
+                <div>
+                    <span>
+                        <img src="images/suplevel8.png" alt="">
+                    </span>
+                    <img class="te" src="images/bbslist-portrait2.jpg" alt="">
+                </div>
+                <div class="name">小明</div>
+                <div class="note">未完成2日</div>
+            </div>
+            <div class="other">
+                <div class="start">
+                    <span class="ru"></span>
+                </div>
+                <div class="btn">
+                    <a href="javascript:void(0)">取消</a>
+                </div>
+                <div class="arr">
+                    <a href="javascript:void(0)"></a>
+                </div>
+            </div>
+        </div>
+
+    </div><div class="item">
+    <div class="head">
+        <div class="suer">
+            <div>
+                    <span>
+                        <img src="images/suplevel8.png" alt="">
+                    </span>
+                <img class="te" src="images/bbslist-portrait3.jpg" alt="">
+            </div>
+            <div class="name">小明</div>
+            <div class="note">未完成2日</div>
+        </div>
+        <div class="other">
+            <div class="start">
+                <span></span>
+            </div>
+            <div class="btn">
+                <a href="javascript:void(0)">取消</a>
+            </div>
+            <div class="arr">
+                <a href="javascript:void(0)"></a>
+            </div>
+        </div>
+    </div>
+
+</div><div class="item">
+    <div class="head">
+        <div class="suer">
+            <div>
+                    <span>
+                        <img src="images/suplevel8.png" alt="">
+                    </span>
+                <img class="te" src="images/bbslist-portrait4.jpg" alt="">
+            </div>
+            <div class="name">小明</div>
+            <div class="note">未完成2日</div>
+        </div>
+        <div class="other">
+            <div class="start">
+                <span class="ru"></span>
+            </div>
+            <div class="btn">
+                <a href="javascript:void(0)">取消</a>
+            </div>
+            <div class="arr">
+                <a href="javascript:void(0)"></a>
+            </div>
+        </div>
+    </div>
+
+</div><div class="item">
+    <div class="head">
+        <div class="suer">
+            <div>
+                    <span>
+                        <img src="images/suplevel8.png" alt="">
+                    </span>
+                <img class="te" src="images/bbslist-portrait5.jpg" alt="">
+            </div>
+            <div class="name">小明</div>
+            <div class="note">未完成2日</div>
+        </div>
+        <div class="other">
+            <div class="start">
+                <span class="ru"></span>
+            </div>
+            <div class="btn">
+                <a href="javascript:void(0)">取消</a>
+            </div>
+            <div class="arr">
+                <a href="javascript:void(0)"></a>
+            </div>
+        </div>
+    </div>
+
+</div><div class="item">
+    <div class="head">
+        <div class="suer">
+            <div>
+                    <span>
+                        <img src="images/suplevel8.png" alt="">
+                    </span>
+                <img class="te" src="images/bbslist-portrait1.jpg" alt="">
+            </div>
+            <div class="name">小明</div>
+            <div class="note">未完成2日</div>
+        </div>
+        <div class="other">
+            <div class="start">
+                <span class="ru"></span>
+            </div>
+            <div class="btn">
+                <a href="javascript:void(0)">取消</a>
+            </div>
+            <div class="arr">
+                <a href="javascript:void(0)"></a>
+            </div>
+        </div>
+    </div>
+
+</div><div class="item">
+    <div class="head">
+        <div class="suer">
+            <div>
+                    <span>
+                        <img src="images/suplevel8.png" alt="">
+                    </span>
+                <img class="te" src="images/bbslist-portrait2.jpg" alt="">
+            </div>
+            <div class="name">小明</div>
+            <div class="note">未完成2日</div>
+        </div>
+        <div class="other">
+            <div class="start">
+                <span></span>
+            </div>
+            <div class="btn">
+                <a href="javascript:void(0)">取消</a>
+            </div>
+            <div class="arr">
+                <a href="javascript:void(0)"></a>
+            </div>
+        </div>
+    </div>
+
+</div><div class="item">
+    <div class="head">
+        <div class="suer">
+            <div>
+                    <span>
+                        <img src="images/suplevel8.png" alt="">
+                    </span>
+                <img class="te" src="images/bbslist-portrait3.jpg" alt="">
+            </div>
+            <div class="name">小明</div>
+            <div class="note">未完成2日</div>
+        </div>
+        <div class="other">
+            <div class="start">
+                <span class="ru"></span>
+            </div>
+            <div class="btn">
+                <a href="javascript:void(0)">取消</a>
+            </div>
+            <div class="arr">
+                <a href="javascript:void(0)"></a>
+            </div>
+        </div>
+    </div>
+
+</div><div class="item">
+    <div class="head">
+        <div class="suer">
+            <div>
+                    <span>
+                        <img src="images/suplevel8.png" alt="">
+                    </span>
+                <img class="te" src="images/bbslist-portrait4.jpg" alt="">
+            </div>
+            <div class="name">小明</div>
+            <div class="note">未完成2日</div>
+        </div>
+        <div class="other">
+            <div class="start">
+                <span class="ru"></span>
+            </div>
+            <div class="btn">
+                <a href="javascript:void(0)">取消</a>
+            </div>
+            <div class="arr">
+                <a href="javascript:void(0)"></a>
+            </div>
+        </div>
+    </div>
+
+</div><div class="item">
+    <div class="head">
+        <div class="suer">
+            <div>
+                    <span>
+                        <img src="images/suplevel8.png" alt="">
+                    </span>
+                <img class="te" src="images/bbslist-portrait5.jpg" alt="">
+            </div>
+            <div class="name">小明</div>
+            <div class="note">未完成2日</div>
+        </div>
+        <div class="other">
+            <div class="start">
+                <span class="ru"></span>
+            </div>
+            <div class="btn">
+                <a href="javascript:void(0)">取消</a>
+            </div>
+            <div class="arr">
+                <a href="javascript:void(0)"></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="suppages">
+    <a href="javascript:void(0)" class="prev">上一页</a>
+    <span class="num">3/50</span>
+    <a href="javascript:void(0)" class="next">下一页</a>
+    <input type="text" class="inp">
+    <a href="javascript:void(0)" class="btn">跳转</a>
+</div>
+<div class="supfoot">
+    <ul>
+        <li>
+            <a href="#">今日未完成：300人　点击查看</a>
+        </li>
+        <li>
+            <span>今日已完成：200人</span>
+        </li>
+    </ul>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+    var mySwiper= new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+    });
+</script>
+</html>

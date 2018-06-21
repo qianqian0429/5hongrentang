@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/banlink.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+        setTimeout(function(){
+            var gallery = mui('.mui-slider');
+            gallery.slider({
+                interval:1800
+            });
+        },1000);
+    </script>
+    <style>
+        .mui-slider-indicator.mui-segmented-control {
+            position: relative;
+            bottom: auto;
+            left: -20px;
+        }
+        .mui-bar-tab .mui-tab-item.mui-active {
+            color: #ff0757;
+        }
+
+        .wrapper{
+            width: auto;
+            height: auto;
+            padding:44px 0 50px 0;
+        }
+        .bbscon-intro {
+            width: auto;
+            height: auto;
+            background: #fff;
+        }
+        .bbscon-intro .user .portrait {
+            width: 46px;
+            height: 46px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+        .bbscon-intro .user {
+            width: auto;
+            height: auto;
+            padding: 15px;
+            position: relative;
+        }
+        .bbscon-intro .user .portrait a {
+            display: block;
+            width: 46px;
+            height: 46px;
+            position: relative;
+        }
+        .bbscon-intro .user .portrait a span {
+            display: block;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-image: url(images/vipwhite.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 10px 10px;
+            background-color: #ff3333;
+        }
+        .bbscon-intro .user .portrait a img {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+        }
+        .bbscon-intro .user .con {
+            width: auto;
+            height: 46px;
+            padding: 0 120px 0 56px;
+        }
+        .bbscon-intro .user .con .name {
+            width: auto;
+            height: 30px;
+            line-height: 30px;
+            font-size: 16px;
+            color: #333;
+        }
+        .bbscon-intro .user .con .txt {
+            width: auto;
+            height: auto;
+            line-height: 12px;
+            font-size: 12px;
+            color: #999;
+        }
+        .bbscon-intro .user .note {
+            width: auto;
+            height: auto;
+            line-height: 12px;
+            font-size: 12px;
+            color: #666;
+            position: absolute;
+            right: 15px;
+            top: 45px;
+        }
+        .bbscon-intro .mation {
+            width: auto;
+            height: auto;
+            padding: 0 15px 15px 15px;
+            font-size: 13px;
+            color: #999;
+            line-height: 1.6em;
+        }
+        .bbsask {
+            width: auto;
+            height: auto;
+            background: #fff;
+            margin-top: 10px;
+            padding: 15px;
+        }
+        .bbsask-switch {
+            width: auto;
+            height: 30px;
+            margin-bottom: 15px;
+        }
+        .bbsask-switch .switchbox {
+            float: left;
+            margin-right: 10px;
+        }
+        .switchbox a.on {
+            background: #74d86b;
+        }
+        .switchbox {
+            width: 52px;
+            height: 30px;
+        }
+        .switchbox a {
+            display: block;
+            width: 52px;
+            height: 30px;
+            background: #ccc;
+            border-radius: 15px;
+            position: relative;
+            transition: ease-in 0.08s , ease-out 0.16s;
+        }
+        .switchbox a span {
+            display: block;
+            width: 26px;
+            height: 26px;
+            background: #fff;
+            border-radius: 50%;
+            position: absolute;
+
+            top: 2px;
+            box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+            transition: ease-in 0.08s , ease-out 0.16s;
+        }
+        .switchbox a.on span {
+            left: 24px;
+        }
+        .bbsask-switch .note {
+            width: auto;
+            height: 30px;
+            line-height: 30px;
+            float: left;
+            font-size: 14px;
+            color: #333;
+        }
+        .bbsask-form {
+            width: auto;
+            height: auto;
+        }
+        .bbsask-form .textarea {
+            width: auto;
+            height: auto;
+            position: relative;
+        }
+        .bbsask-form .textarea textarea {
+            width: 100%;
+            height: 150px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #666;
+            padding: 10px;
+        }
+        .bbsask-form .textarea .of {
+            display: block;
+            position: absolute;
+            right: 10px;
+            bottom: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+        .bbsask-form .addfile {
+            width: auto;
+            height: auto;
+            padding-top: 15px;
+        }
+        .bbsask-form .addfile a {
+            display: block;
+            width: 50px;
+            height: 50px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: url(images/icon-add.png) no-repeat center #fff;
+            background-size: 22px 22px;
+        }
+        .bbsask-form .anonymous {
+            width: auto;
+            height: auto;
+            padding-top: 10px;
+            overflow: hidden;
+        }
+        .bbsask-form .anonymous label {
+            display: block;
+            width: auto;
+            height: 24px;
+            line-height: 24px;
+            float: left;
+            font-size: 12px;
+            color: #999;
+        }
+        .bbsask-form .anonymous label input {
+            display: block;
+            width: 14px;
+            height: 14px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            float: left;
+            margin: 5px 5px 0 0;
+            background: #fff;
+        }
+        .bbsask-form .btn {
+            width: auto;
+            height: auto;
+            padding-top: 0px;
+        }
+        .bbsask-form .btn input {
+            display: block;
+            width: 150px;
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            border: 0px;
+            font-size: 14px;
+            color: #fff;
+            margin: 0 auto;
+            border-radius: 5px;
+            background: -webkit-linear-gradient(left, #f58762 , #fb5b5b 70%, #ff5391);
+            background: -o-linear-gradient(right, #f58762 , #fb5b5b 70%, #ff5391);
+            background: -moz-linear-gradient(right, #f58762 , #fb5b5b 70%, #ff5391);
+            background: linear-gradient(to right, #f58762 , #fb5b5b 70%, #ff5391);
+            box-shadow: 0px 2px 2px rgba(255,150,149,0.5);
+        }
+    </style>
+</head>
+<body>
+<div class="mui-inner-wrap">
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-right"></a>
+        <a href="">
+            <i class="mui-icon mui-icon-search mui-pull-right"></i>
+        </a>
+        <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted scroll">
+            <div class="mui-scroll slide">
+                <a class="mui-control-item mui-active">
+                    <i></i>
+                    <b></b>
+                    学堂教员
+                </a>
+                <a class="mui-control-item">
+                    <i></i>
+                    <b></b>
+                    网络红人
+                </a>
+                <a class="mui-control-item">
+                    <i></i>
+                    <b></b>
+                    网络商业
+                </a>
+                <a class="mui-control-item">
+                    <i></i>
+                    <b></b>
+                    时尚造型
+                </a>
+                <a class="mui-control-item">
+                    <i></i>
+                    <b></b>
+                    官方提问
+                </a>
+
+
+            </div>
+        </div>
+    </header>
+    <nav class="mui-bar mui-bar-tab">
+        <a class="mui-tab-item ">
+            <span class="mui-icon icon1 "></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item">
+            <span class="mui-icon icon2"></span>
+            <span class="mui-tab-label">学堂</span>
+        </a>
+        <a class="mui-tab-item">
+            <span class="mui-icon icon3"></span>
+            <span class="mui-tab-label">注册</span>
+        </a>
+        <a class="mui-tab-item mui-active">
+            <span class="mui-icon icon4 on"></span>
+            <span class="mui-tab-label">问答</span>
+        </a>
+        <a class="mui-tab-item">
+            <span class="mui-icon icon5"></span>
+            <span class="mui-tab-label">我的</span>
+        </a>
+    </nav>
+    <div class="mui-content mui-scroll-wrapper clearpor">
+        <div class="mui-scroll">
+            <div id="slider" class="mui-slider" >
+                <div class="mui-slider-group mui-slider-loop">
+                    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <a href="#">
+                            <img src="images/banner.jpg">
+                        </a>
+                    </div>
+                    <!-- 第一张 -->
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="images/banner.jpg">
+                        </a>
+                    </div>
+                    <!-- 第二张 -->
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="images/banner.jpg">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="bbscon-intro">
+                <div class="user">
+                    <div class="portrait"><a href=""><span></span><img src="images/bbslist-portrait1.jpg"></a></div>
+                    <div class="con">
+                        <div class="name"><a href="">陈茂源</a></div>
+                        <div class="txt">红人学堂认证教员</div>
+                    </div>
+                    <div class="note">已回答20个问题</div>
+                </div>
+                <div class="mation">基本介绍：剑风倚荡激千尺,白云日上影中仙。便是这，白衣段云！便是这，白衣段云！“草民段云，不日定去府上做客</div>
+            </div>
+            <div class="bbsask">
+                <div class="bbsask-switch"><div class="switchbox"><a href="javascript:void(0)" class="on"><span></span></a></div><span class="note">公开提问（推荐）</span></div>
+                <div class="bbsask-form">
+                    <div class="textarea"><textarea placeholder="输入你的提问"></textarea><span class="of">0/150</span></div>
+                    <div class="addfile"><a href="javascript:void(0)"></a></div>
+                    <div class="anonymous"><label><input type="checkbox">匿名提问</label></div>
+                    <div class="btn" style="height: 100px;"><input type="button" value="提交" onclick="location.href=''"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+</body>
+</html>
