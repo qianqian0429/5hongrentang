@@ -1,0 +1,319 @@
+.img{
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+.img img{
+	width: 100%;
+	height: auto;
+}
+/*menu开始*/
+.nick{
+	background: url(../images/borgrayb.png) repeat-x bottom;
+	background-color: #fff;
+	-webkit-background-size: 1px 1px;
+	background-size: 1px 1px;
+	position: relative;
+	z-index: 5;
+	padding: 0 68px 0 96px;
+	margin-top: -4px;
+}
+.nick .tou{
+	width: 66px;
+	height: 66px;
+	background-color: #fff;
+	position: absolute;
+	top: -10px;
+	left: 15px;
+	border-radius: 50%;
+	padding: 2px;
+}
+.nick .tou img{
+	width: 66px;
+	height: 66px;
+	border-radius: 50%;
+}
+.nick .center{
+	width: auto;
+	height: 68px;
+	padding-right: 10px;
+}
+.nick .center .top{
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	padding-top: 8px;
+}
+.nick .center .top .name{
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #333;
+	float: left;
+	padding-right: 20px;
+}
+.nick .center .top .name span{
+	background: url(../images/vip-blue.png) no-repeat right center;
+	-webkit-background-size: 14px 14px;
+	background-size: 14px 14px;
+	padding-right: 20px;
+}
+.nick .center .top .fen{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #999;
+}
+.nick .center .bot{
+	font-size: 10px;
+	color: #999;
+}
+.nick .right{
+	height: 40px;
+	width: 68px;
+	position: absolute;
+	right: 0;
+	top: 14px;
+	background: url(../images/borgrayl.png) repeat-y left;
+	-webkit-background-size: 1px 1px;
+	background-size: 1px 1px;
+}
+.nick .right a{
+	display: block;
+	height: 40px;
+}
+.nick .right a span{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+.nick .right a .tu{
+	width: 24px;
+	height: 24px;
+	margin: 0 auto;
+	text-align: center;
+}
+.nick .right span.tu img{
+	width: 24px;
+	height: 24px;
+}
+.nick .right span.test{
+	display: block;
+	width: auto;
+	font-size:10px;
+	color: #999;
+	padding-top: 5px;
+	text-align: center;
+}
+/*menu结束*/
+.bott{
+	height: 44px;
+	background-color: #fff;
+	padding: 9px 0;
+	overflow: hidden;
+}
+.bott ul li{
+	width: 50%;
+	height: 26px;
+	float: left;
+	background: url(../images/borgrayr.png) repeat-y right;
+	-webkit-background-size: 1px 1px;
+	background-size: 1px 1px;
+	padding: 0 35px;
+}
+.bott ul li:last-child{
+	background: none;
+}
+.bott ul li a{
+	display: block;
+	height: 26px;
+	text-align: center;
+	line-height: 26px;
+	font-size: 12px;
+	border-radius: 15px;
+	color: #fff;
+	background:linear-gradient(to right,#f58762,#fb5b5b,#ff5391);
+}
+.bott ul li a span{
+	height: 24px;
+	border-radius: 15px;
+	text-align: center;
+	background-color: #fff;
+	padding:5px 33px;
+}
+.bott ul li a span i{
+	display: inline-block;
+	height: 24px;
+	line-height: 24px;
+	color: #F54744;
+	background: url(../images/icon-add.png) no-repeat left center;
+	-webkit-background-size: 10px 10px;
+	background-size: 10px 10px;
+	padding-left: 16px;
+}
+.content2{
+	margin-top: 10px;
+	background: #fff;
+	overflow: hidden;
+}
+.content2 .title{
+	padding: 15px;
+	color: #333;
+	font-size: 18px;
+}
+.content2 .img a{
+	display: block;
+	position: relative;
+}
+.content2 .img .icon{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -20px;
+	margin-top: -20px;
+	background: url(../images/video-play.png) no-repeat;
+	-webkit-background-size: 40px 40px;
+	background-size: 40px 40px;
+}
+.content2 .img .xia{
+	height: 44px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	text-align: right;
+	padding: 12px 15px 0 15px;
+	color: #fff;
+}
+.content2 .img .xia span{
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+	background: url(../images/video-note.png) no-repeat center left;
+	background-size: 12px 12px;
+	font-size: 12px;
+	color: #fff;
+	padding-left: 20px;
+}
+/*svipcoursecon_new_con2.css*/
+.content2 .music{
+	background-color: #f5f5f5;
+	border: 1px dashed #ddd;
+	border-radius: 5px;
+	margin: 0 15px; 
+	padding: 15px;
+}
+.content2 .music .title{
+	font-size: 14px;
+	color: #333;
+	padding: 0;
+}
+.content2 .music .yuyin{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.content2 .music .yuyin .play{
+	width: 133px;
+	height: 25px;
+}
+.content2 .music .yuyin .play a{
+	display: block;
+	width: 133px;
+	height: 25px;
+	background: url(../images/musicbg.png) no-repeat;
+	-webkit-background-size: 133px 25px;
+	background-size: 133px 25px;
+	position: relative;
+}
+.content2 .music .yuyin .play a .bo{
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	background: url(../images/music.png) no-repeat 15px center;
+	-webkit-background-size: 12px 12px;
+	background-size: 12px 12px;
+	padding-left: 40px;
+}
+.content2 .music .yuyin .play a .num{
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	color: #999;
+	position: absolute;
+	right: -20px;
+	top: 0;
+	padding-left: 10px;
+}
+.content2 .music .yuyin .ting{
+	font-size: 12px;
+	color: #999;
+}
+/*svipcoursecon_new_con2.css 结束*/
+.content2 .txt{
+	font-size: 13px;
+	color: #999;
+	padding: 15px;
+}
+/*底部opera*/
+.opera{
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+.opera .opera-con{
+	height: 34px;
+	padding: 5 0;
+	overflow: hidden;
+	background-color: #fff;
+}
+.opera .opera-con ul li{
+	width: 25%;
+	height: 34px;
+	float: left;
+}
+.opera .opera-con ul li a{
+	display: block;
+	height: 24px;
+	line-height: 24px;
+	background: url(../images/borgrayr.png) repeat-y right;
+	-webkit-background-size: 1px 1px;
+	background-size: 1px 1px;
+	text-align: center;
+}
+.opera .opera-con ul li a .list{
+	font-size: 10px;
+	color: #999;
+	position: relative;
+	padding-left: 18px;
+	display: inline-block;
+	height: 24px;
+	line-height: 24px;
+}
+.opera .opera-con ul li a .list span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -6px;
+	background: url(../images/inopera.png) no-repeat;
+	background-size: 48px 24px;
+}
+.opera .opera-con ul li a .list span.icon1{
+	background-position: 0 0;
+}
+.opera .opera-con ul li a .list span.icon2{
+	background-position: -12px 0;
+}
+.opera .opera-con ul li a .list span.icon3{
+	background-position: -24px 0;
+}
+.opera .opera-con ul li a .list span.icon4{
+	background-position: -36px 0;
+}
