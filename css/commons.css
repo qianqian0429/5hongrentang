@@ -1,0 +1,292 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #f6f6f6;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+html{
+	font-size: 100px;
+}
+a{
+	text-decoration: none;
+}
+.headd{
+	height: 0.88rem;
+	position: fixed;
+    z-index: 1000;
+    background: #fff;
+	top: 0;
+}
+.col33{
+	color: #333;
+}
+.f28{
+	font-size: 0.28rem;
+}
+.header{
+	width: 7.5rem;
+	height: 0.88rem;
+	background: #fff;
+	display: flex;
+}
+.headbox{
+	width: 5.7rem;
+	height: 0.88rem;
+}
+.hei{
+	display: flex;
+	width: auto;
+}
+.hei a{
+	width: auto;
+	height: 0.88rem	;
+	line-height: 0.88rem;
+	padding: 0 0.22rem 0 0.1rem;
+	position: relative;
+}
+.hei a:after{
+	content: "|";
+	display: block;
+	position: absolute;
+	right: 0;
+	top:5%;
+	color: #ddd;
+	margin-top: -0.05rem;
+}
+.hei a b{
+
+	display: inline-block;
+	width: 80%;
+    height: 2px;
+    background: #ff165b;
+    position: absolute;
+    left: 5px;
+    right: 11px;
+    bottom: 7px;
+    display: none;
+}
+.hei a.cur b{
+	display: block;
+}
+.sounav{
+	display: flex;
+	flex: 1;
+	position: relative;
+}
+.navsbox{
+	position: absolute;
+	right: 14px;
+	width: 60px;
+	height: 45px;
+}
+.headsearch{
+	float: left;
+	width: 30px;
+    height: 44px;
+}
+.headsearch a,.headmenu a{
+	display: block;
+    width: auto;
+    height: 44px;
+}
+.headsearch a{
+	background: url(../images/icon-search.png) no-repeat center;
+	background-size: 15px 15px;
+}
+.headmenu{
+	float: right;
+	width: 30px;
+    height: 44px;
+}
+.headmenu a{
+	font-size: 15px;
+	background: url(../images/icon-menu.png) no-repeat center;
+	background-size: 15px 15px;
+}
+.hidmask{
+	position: absolute;
+	top: -0.88rem;
+	width: 7.5rem;
+	height: 100%;
+	background: pink;
+	z-index: 5;
+	display: none;
+}
+.openmenu-close{
+	width: 100%;
+    height: 44px;
+    background: #fff;
+    z-index: 2;
+}
+.openmenu-close a{
+	display: block;
+    width: 44px;
+    height: 44px;
+    background: url(../images/open-close.png) no-repeat center;
+    background-size: 15px 15px;
+    margin-left: 2px;
+}
+.cici{
+	position: static !important;
+	margin-top: 0.88rem;
+}
+
+#footer{
+    height: 1rem; 
+}
+/*脚步*/
+.common_footer{
+	position:fixed;
+    bottom:0;
+    height: 1rem;
+    display:flex;
+     width: 100%;
+    background: url(../images/borgrayt.png) repeat-x top #fff;
+    background-size: 1px 1px;
+}
+.common_footer a{
+    flex:1 1 auto;
+    text-align: center;
+    font-size: 0.10rem;
+    color: #666666;
+}
+.common_footer a span{
+    display:block;
+    margin:0 auto;
+    width: 0.4rem;
+    height: 0.4rem;
+    background:url(../images/footer.png) no-repeat;
+    background-size: 2rem 0.81rem;
+    margin-bottom: 0.1rem;
+    margin-top: 0.16rem;
+    font-size: 0.1rem;
+}
+.common_footer a.cur p{
+    color: #ff0757;
+}
+.common_footer a:nth-child(1) span{
+    background-position:0.02rem 0rem;
+}
+.common_footer a:nth-child(2) span{
+    background-position: -0.4rem 0;
+}
+.common_footer a:nth-child(3) span{
+    background-position: -0.8rem 0;
+}
+.common_footer a:nth-child(4) span{
+    background-position: -1.19rem 0;
+}
+.common_footer a:nth-child(5) span{
+    background-position: -1.6rem 0;
+}
+.common_footer a:nth-child(1).cur span{
+    background-position:0.02rem -0.4rem;
+}
+.common_footer a:nth-child(2).cur span{
+    background-position:-0.4rem -0.4rem;
+}
+
+.common_footer a:nth-child(3).cur span{
+    background-position:-0.8rem -0.4rem;
+}
+
+.common_footer a:nth-child(4).cur span{
+    background-position:-1.2rem -0.4rem;
+}
+
+.common_footer a:nth-child(5).cur span{
+    background-position:-1.6rem -0.4rem;
+}
+/*common_search*/
+.common_search2{
+    width: 100%;
+    height: 0.88rem;
+    padding: 0.14rem 0.3rem 0.14rem 0.3rem;
+    display: flex;
+    align-items: center;
+}
+.common_search2  input{
+    width: 5.9rem;
+    height: 0.6rem;
+    padding: 0.14rem 0.2rem 0.14rem 0.72rem;
+    font-size:0.24rem;
+    background: url(../images/icon-search.png) no-repeat #eeeeee;
+    background-size: 0.3rem;
+    background-position: 0.14rem center;
+}
+.common_search2  input:focus{
+    border: 1px solid red;
+}
+.common_search2 a{
+    display: block;
+    font-size: 0.28rem;
+    color: #999999;
+}
+.common_hot{
+    clear: both;
+    height: 0.88rem;
+    background: #f6f6f6;
+    padding: 0 0.3rem;
+   
+}
+.common_hot h2{
+    font-weight: normal;
+    font-size:0.28rem;
+    line-height: 0.88rem;
+    padding-left: 0.48rem;
+    background: url(../images/icon-hot.png)no-repeat;
+    background-size: 0.36rem;
+    background-position: left center;
+}
+.lishi h2{
+    background: url(../images/icon-history.png)no-repeat;
+    background-size: 0.36rem;
+    background-position: left center;
+}
+.common_classification{
+    padding:0.2rem
+}
+.common_classification ul li{
+    padding:0.1rem;
+    float: left;
+}
+.common_classification ul li a{
+    padding:0  0.2rem;
+    border: 1px solid #ddd;
+    border-radius: 0.3rem;
+    font-size: 0.24rem;
+    height:0.56rem ;
+    line-height: 0.54rem;
+}
+.common_classification ul li.cur a{
+    color: #f54744;
+    border-color: #f54744;
+}
+.common_history{
+    padding-left: 0.3rem;
+}
+.common_history ul li{
+    line-height: 0.88rem;
+}
+.common_history ul li a{
+    font-size: 0.24rem;
+    color: #999;
+}
+.common_clear{
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #333;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.ca{
+    width: 0px;
+}
