@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/commons.css"/>
+		<link rel="stylesheet" href="css/mui.min.css" />
+	</head>
+	<body>
+		<div id="header" class="header">
+			
+		</div>
+		<div class="hidmask">
+			<div class="openmenu-close"><a href=""></a></div>
+		</div>
+	</body>
+	
+	
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/commonhed.js"></script>
+	<script src="js/app.js"></script>
+	<script type="text/javascript">
+		var hed = new Header({
+            box:"#header",//创建新div的id值
+            nav:{//导航内容以及链接
+                "资讯":'news.html',
+                "学堂出品":'produced.html',
+                "红人黄页":'yellow.html',
+                '案例分析':'vipcourse.tml',
+                '红人直通车':'throughtrain.html',
+                '红人通告':'rednotice.html',
+                '书籍推荐':'#',
+                '学堂成果':'#',
+                '众筹':'#',
+                '人气榜':'#'
+            },
+            cur:1//加下划线
+        })
+
+        var commonHeader = new Swiper(' .swiper-container',{
+            slidesPerView: 'auto',
+            initialSlide : 0,
+            width:260
+        })
+        
+        $('.menubtn').click(function(){
+        		$('.hidmask').show();
+        })
+	</script>
+</html>
