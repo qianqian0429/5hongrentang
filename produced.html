@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/commons.css" />
+		<link rel="stylesheet" href="css/pall.css" />
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="headd">
+			<header class="header" id="header"></header>
+		</div>
+		<!--lunbo -->
+		<!--轮播开始-->
+		<div class="mui-scroll cici">
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="images/banner.jpg">
+						</a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="images/banner.jpg">
+						</a>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="images/banner.jpg">
+						</a>
+					</div>
+					<!-- 第三张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="images/banner.jpg">
+						</a>
+					</div>
+					<!--额外增加的一个节点(循环轮播：最后一个节点是第一张轮播)-->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="images/banner.jpg">
+						</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!--轮播结束-->
+		<!--会员内容开始-->
+		<div class="datatabs">
+			<ul class="datatabsul">
+				<li class="active">
+					<a href="javascript:;" class="on">会员专区</a>
+				</li>
+				<li>
+					<a href="javascript:;">VIP专区</a>
+				</li>
+				<li>
+					<a href="javascript:;">超级VIP</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="opfilter"><span class="icon-filter">筛选</span></a>
+				</li>
+			</ul>
+		</div>
+		<!--会员内容结束-->
+		<!---->
+		<div class="photonum">
+			<ul>
+				<li>
+					<a href="producedcon.html">
+						<div class="photoimg">
+							<img src="images/prophoto1.jpg" alt="" />
+						</div>
+						<div class="phototext">
+							<div class="imgtit">标题吸引人</div>
+							<div class="imgtxt">简短副标题表述一下</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="producedcon.html">
+						<div class="photoimg">
+							<img src="images/prophoto2.jpg" alt="" />
+						</div>
+						<div class="phototext">
+							<div class="imgtit">标题吸引人</div>
+							<div class="imgtxt">简短副标题表述一下</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="producedcon.html">
+						<div class="photoimg">
+							<img src="images/prophoto3.jpg" alt="" />
+						</div>
+						<div class="phototext">
+							<div class="imgtit">标题吸引人</div>
+							<div class="imgtxt">简短副标题表述一下</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="producedcon.html">
+						<div class="photoimg">
+							<img src="images/prophoto4.jpg" alt="" />
+						</div>
+						<div class="phototext">
+							<div class="imgtit">标题吸引人</div>
+							<div class="imgtxt">简短副标题表述一下</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!---->
+		<!--遮罩-->
+		<div class="hidmask">
+			<div class="openmenu-close">
+				<a href=""></a>
+			</div>
+		</div>
+		<!--脚步-->
+		<div id="footer">
+
+		</div>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src='js/commonhed.js'></script>
+	<script type="text/javascript">
+		mui.init()
+	</script>
+	<script>
+		var hed = new Header({
+			box: "#header", //创建新div的id值
+			nav: { //导航内容以及链接
+				"写真": 'produced.html',
+				"视频": 'producedvideo.html',
+				"动漫": '#',
+				'音乐': 'producedmusic.html',
+				'我要预约': 'producedreser.html',
+				'预约摄影师': 'producedreserphoto.html',
+				'学堂出品': '',
+				'抢先看': 'pioneer.html',
+			},
+			cur: 1 //加下划线
+		})
+		var commonHeader = new Swiper('.swiper-container', {
+			slidesPerView: 'auto',
+			initialSlide: 0,
+			width: 260
+		})
+
+		$('.menubtn').click(function() {
+			$('.hidmask').show();
+		})
+	</script>
+
+	<script type="text/javascript">
+	</script>
+	<!--轮播-->
+
+	<script type="text/javascript">
+		//获得slider插件对象
+		var gallery = mui('.mui-slider');
+		gallery.slider({
+			interval: 3000 //自动轮播周期，若为0则不自动播放，默认为0；
+		});
+	</script>
+
+	<script>
+		var f = new Footer({
+			box: '#footer',
+			cur: ""
+		})
+	</script>
+
+</html>
